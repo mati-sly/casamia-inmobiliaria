@@ -1,0 +1,31 @@
+# 🔒 ARCHIVOS SENSIBLES
+setup/config.php
+*.sql
+.env
+.env.local
+
+# 📂 DEPENDENCIAS
+node_modules/
+vendor/
+composer.lock
+
+# 🗑️ ARCHIVOS INNECESARIOS
+phpMyAdmin/
+temp_fix.js
+*.backup
+*.bak
+index.php.backup
+file/
+
+# 🖼️ UPLOADS PRIVADOS
+IMG/usuarios/*
+!IMG/usuarios/comodin.png
+!IMG/usuarios/.gitkeep
+propiedades/*
+!propiedades/.gitkeep
+
+# 🖥️ SISTEMA
+.DS_Store
+Thumbs.db
+*.log
+logs/

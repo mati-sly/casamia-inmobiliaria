@@ -1,0 +1,5 @@
+DirectoryIndex index.php index.html
+RewriteEngine On
+
+# Asegurar que PHP se procese
+AddType application/x-httpd-php .php

@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+
+  /* Fondo con degradado y imagen edificios */
+  background: 
+    linear-gradient(rgba(65, 105, 161, 0.534), rgba(65, 105, 161, 0.534)),
+    url('../img/edificios.jpg') center/cover no-repeat;
+}
+
+
+
+#sesion {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto 10px auto;
+  background: rgba(10, 66, 112, 0.512);
+  backdrop-filter: blur(10px);
+}
+
+.card {
+  background: rgba(10, 66, 112, 0.512);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+  background-color: #033c70;
+  
+}
+
+#opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+
+}
+
+.opcion-card {
+  text-align: center;
+  width: 220px;
+  padding: 20px;
+  background: rgba(10, 66, 112, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  color: white;
+}
+
+.opcion-card:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.opcion-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.opcion-card a {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #07478b;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.opcion-card a:hover {
+  background-color: #033c70;
+  color: #fff;
+}

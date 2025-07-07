@@ -1,0 +1,104 @@
+
+
+
+
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(17, 42, 78, 0.7)),
+    url('../img/fondochicago.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 0;
+}
+
+
+
+
+.container {
+    width: 33rem;
+    
+}
+
+.card {
+    background-color: rgba(10, 59, 75, 0.8);
+    padding: 10px;
+
+    
+}
+
+.card-header h2 {
+    text-align: center !important;
+}
+
+.col-sm-3 {
+    display: flex;
+    justify-content: center;  /* centra horizontalmente */
+    align-items: center;  
+}
+
+.col-sm-9 {
+    display: flex;
+    justify-content: center;  /* centra horizontalmente */
+    align-items: center;  
+}
+
+.card-header{
+    color: #fff;
+}
+
+.subtitulo{
+    color:#fff;
+    font-family: 'Segoe UI', Roboto,sans-serif;
+    font: bold;
+}
+
+.col-sm-9 input {
+  width: 20rem;
+  padding: 10px;
+  margin: 5px 0 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.col-sm-9 input[type="email"]::placeholder,
+.col-sm-9 input[type="password"]::placeholder {
+  font-size: 0.95rem;
+  color: #cccccc !important;
+}
+
+.botonIngresar {
+    background-color: #2d8aa5 !important;
+    /*width: 75% !important;*/
+    /*display: block !important;  /* ¡Clave! Lo convierte en bloque */
+    /*margin:auto !important; */
+}
+
+.botonIngresar:hover {  /*cambiara el color cuando el mouse este encima*/
+  background-color: #23758c !important;
+}
+
+#registrarme,
+#olvide {
+    color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#registrarme a,
+#olvide a {
+  color: #33a3c6;
+  text-decoration: none;
+}
+
+#registrarme a:hover,
+#olvide a:hover {
+  text-decoration: underline;
+  color: #54c1e0
+}

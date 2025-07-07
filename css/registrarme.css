@@ -1,0 +1,67 @@
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(15, 87, 120, 0.567)),
+    url('../img/fondo\ form-registro.jpg') center/cover no-repeat;
+    padding: 20px;
+}
+
+#form-registro{
+  background-color: rgba(8, 47, 103, 0.47) ;
+  backdrop-filter: blur(10px);
+  width: 40%; /*ancho del contenedor PRINCIPAL*/
+  padding: 5px;
+  margin: 0 auto; /*centrar automaticamente */
+  border-radius: 15px;
+  color: white; /* cambia color del texto dentro del contenedor */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+/*
+  0       → Desplazamiento horizontal: 0px, la sombra no se mueve hacia los lados.
+  4px     → Desplazamiento vertical: 4px, la sombra se desplaza hacia abajo 4 píxeles.
+  20px    → Desenfoque: la sombra se difumina con un radio de 20 píxeles, haciéndola suave.
+  rgba(0, 0, 0, 0.4)
+           → Color: negro con 40% de opacidad (0.4), para que no sea tan dura visualmente.
+*/
+}
+
+#form-registro h2 {
+  text-align: center; /* Centra solo el texto del título */
+  margin-bottom: 30px;  /* Espacio debajo del título para separarlo de los campos */
+}
+
+
+/* Este div contiene todos los campos (labels + inputs) */
+#form-registro form .mb-3 {
+  width: 500px; /* Ancho fijo para los campos del formulario */
+  margin: 0 auto; /* Centra el bloque horizontalmente dentro del formulario */
+  text-align: left; /* Alinea el contenido (label e input) a la izquierda */
+}
+
+/* Estilos para todos los labels dentro del formulario */
+#form-registro label {
+  display: block; /* Hace que el label ocupe toda la línea */
+  margin-bottom: 8px; /* Espacio debajo del label, antes del input */
+  font-weight: bold; /* Negrita texto*/
+  width: 100%; /* Ocupa todo el ancho de su contenedor padre (500px) */
+}
+
+/* Estilos para los inputs (form-control) */
+#form-registro .form-control {
+  width: 100%; /* Ocupa todo el ancho disponible en el div padre (500px) */
+  margin-bottom: 20px; /* Espacio debajo del input para separarlo del siguiente label */
+  color: black;               /* Letras en negro */
+}
+
+/* Estado normal del input (sin escribir) */
+#form-registro .form-control {
+  background-color: #ffffffe1;  /* Gris claro como fondo estático */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+/* Estado cuando el usuario hace clic o empieza a escribir */
+#form-registro .form-control:focus {
+  background-color: #ffffff;  /* Blanco cuando el input está enfocado */            /* Quita el borde azul por defecto */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil al enfocar */
+}
+
+

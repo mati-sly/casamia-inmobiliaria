@@ -1,0 +1,163 @@
+/* ===== ESTILOS BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0a0a1a;
+  background-image: linear-gradient(rgba(10, 10, 26, 0.85), rgba(10, 10, 26, 0.85)), url("../IMG/7731937-227618590.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-principal {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* ===== CAJA PRINCIPAL ===== */
+.caja {
+  background-color: #0e4658;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  min-height: 300px;
+  border: 1px solid rgba(45, 138, 165, 0.3);
+}
+
+h1 {
+  color: #e5e5ea;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* ===== FORMULARIO ===== */
+.etiqueta {
+  display: block;
+  margin-bottom: 8px;
+  color: #e5e5ea;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.input-correo {
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(45, 138, 165, 0.5);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.input-correo:focus {
+  outline: none;
+  border-color: #e5e5ea;
+  box-shadow: 0 0 0 2px rgba(229, 229, 234, 0.3);
+}
+
+.input-correo:invalid {
+  border-color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+/* ===== BOTONES ===== */
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+.boton-enviar {
+  background-color: #2d8aa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #23758c;
+  transform: translateY(-1px);
+}
+
+.boton-cancelar {
+  background-color: transparent;
+  color: #e5e5ea;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  flex: 1;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e5ea;
+}
+
+.boton-cancelar:hover {
+  background-color: rgba(229, 229, 234, 0.1);
+}
+
+/* ===== INFORMACIÓN ADICIONAL ===== */
+.info-adicional {
+  margin-top: 20px;
+  color: #e5e5ea;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ===== EFECTOS DE TRANSICIÓN ===== */
+button, .input-correo {
+  transition: all 0.3s ease;
+}
+
+/* ===== DISEÑO RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    padding: 20px;
+  }
+  
+  .caja {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .botones {
+    flex-direction: column;
+  }
+  
+  .caja {
+    padding: 20px;
+    min-height: auto;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}

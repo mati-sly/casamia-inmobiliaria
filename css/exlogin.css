@@ -1,0 +1,94 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto,sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(17, 42, 78, 0.7)),
+    url('../IMG/fondochicago.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cajalogin {
+  background-color: rgba(10, 59, 75, 0.8);
+  border-radius: 8px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#titulologin {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #e5e5ea;
+}
+
+#datos label {
+  display: block;
+  margin-top: 10px;
+  color: #e5e5ea;
+  font-size: 1.1rem; /*mas grande*/
+  font-weight: 500; /*negrita*/
+}
+
+.subtitulo {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: #fff;
+}
+
+#datos input[type="email"]::placeholder,
+#datos input[type="password"]::placeholder {
+  font-size: 0.95rem;
+  color: #cccccc !important;
+}
+
+.botonIngresar {
+  width: 75%;
+  padding: 12px;
+  background-color: #2d8aa5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /*mas grande*/
+  display: block;  /* ¡Clave! Lo convierte en bloque */
+  margin:auto; 
+}
+
+.botonIngresar:hover {  /*cambiara el color cuando el mouse este encima*/
+  background-color: #23758c;
+}
+
+#registrarme,
+#olvide {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#registrarme a,
+#olvide a {
+  color: #2d8aa5;
+  text-decoration: none;
+}
+
+#registrarme a:hover,
+#olvide a:hover {
+  text-decoration: underline;
+}

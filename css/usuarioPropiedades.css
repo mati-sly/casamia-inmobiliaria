@@ -1,0 +1,388 @@
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(65, 105, 161, 0.534)),
+    url('../IMG/edificios.jpg') center/cover no-repeat;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-label-sm{
+    color: #fff;
+}
+.form-text-sm{
+    color: #fff;
+}
+.form-check-label-sm{
+    color: #fff;
+}
+.table-hover{
+    color: #fff;
+}
+.card-body ul li {
+    color: #fff !important;
+}
+
+.card-body h6 {
+    color: #fff !important;
+}
+
+/* Cards principales */
+#formulario, #mis-propiedades {
+  width: auto;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: rgba(10, 66, 112, 0.95);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-header {
+  color: white;
+  background: linear-gradient(135deg, rgba(10, 66, 112, 0.9), rgba(65, 105, 161, 0.8));
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+/* Secciones del formulario - COMPACTAS */
+.seccion-formulario-compacta {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.titulo-seccion-pequeno {
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.titulo-seccion {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+} /* ✅ AGREGADA LLAVE DE CIERRE */
+
+/* Labels y texto */
+.form-label {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.form-select {
+    color: #fff;
+}
+
+/* Inputs y selects */
+.form-control, .form-select {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border-color: #4CAF50;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
+
+.form-select option {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+/* Checkboxes */
+.form-check {
+  margin-bottom: 15px;
+}
+
+.form-check-input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-right: 10px;
+}
+
+.form-check-input:checked {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.form-check-label {
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Botones */
+.btn {
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 5px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2980b9, #1f4e79);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #27ae60, #219a52);
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #219a52, #1e8449);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(39, 174, 96, 0.4);
+}
+
+.btn-info {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  border: none;
+  color: white;
+}
+
+.btn-info:hover {
+  background: linear-gradient(135deg, #138496, #0f6674);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(23, 162, 184, 0.4);
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  border: none;
+  color: white;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+  border: none;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #7f8c8d, #6c7b7d);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(149, 165, 166, 0.4);
+}
+
+/* Tabla */
+.table-responsive {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: linear-gradient(135deg, rgba(52, 73, 94, 0.9), rgba(44, 62, 80, 0.9));
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  padding: 15px 10px;
+}
+
+.table tbody td {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  padding: 15px 10px;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(52, 152, 219, 0.3);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Badges */
+.badge {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.bg-success {
+  background: linear-gradient(135deg, #27ae60, #219a52) !important;
+}
+
+.bg-secondary {
+  background: linear-gradient(135deg, #95a5a6, #7f8c8d) !important;
+}
+
+/* Imágenes */
+.img-thumbnail {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Efectos adicionales */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .seccion-formulario {
+    padding: 15px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .table-responsive {
+    font-size: 0.85rem;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Float buttons */
+.float-end {
+  float: right !important;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center !important;
+}
+
+/* Input readonly */
+input[readonly] {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  cursor: not-allowed;
+}
+/* Estilos para galería de imágenes */
+.imagen-card {
+  transition: transform 0.3s ease;
+}
+
+.imagen-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.img-galeria {
+  border-radius: 8px 8px 0 0;
+}
+
+.btn-group .btn {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+}

@@ -1,0 +1,41 @@
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(65, 105, 161, 0.534)),
+    url('../img/edificios.jpg') center/cover no-repeat;
+    padding: 20px;
+}
+
+
+.carousel-img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.propiedad-info {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.propiedad-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.propiedad-info .precio {
+  color: #d9534f;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.lista-info {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.lista-info li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}

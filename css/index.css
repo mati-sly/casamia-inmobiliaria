@@ -1,0 +1,285 @@
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header con fondo de imagen y buscador */
+.cabecera-con-buscador {
+  padding-top: 0;
+  position: relative;
+  min-height: 150px;
+  background-image: url('../img/casa1.jpg'); /* Tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-cabecera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 42, 78, 0.729); /* Overlay azul semitransparente */
+}
+
+.contenido-cabecera {
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0px 0px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra superior con logo y login */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+}
+
+.logo img {
+width: 150px;       /* Ancho fijo en píxeles */
+height: 150px;      /* Altura fija en píxeles */
+min-width: 100px;   /* Ancho mínimo */
+max-width: 500px;   /* Ancho máximo */
+min-height: 80px;   /* Altura mínima */
+max-height: 300px;  /* Altura máxima */
+}
+
+.boton-login {
+  background-color: #fff;
+  color: #2d8aa5;
+  padding: 8px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid #2d8aa5;
+}
+
+.boton-login:hover {
+  background-color: #2d8aa5;
+  color: white;
+}
+
+/* Buscador en el header */
+.buscador-header {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 25px ;
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.buscador-header h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0,5);
+}
+
+.buscador-header p {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.formulario-busqueda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fila-busqueda-unica {
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.grupo-campo {
+  flex:0 1 auto;
+  min-width: 180px;
+  max-width: 250px;
+}
+
+.grupo-campo select {
+  width: 100%;
+  padding: 10px 3px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.boton-buscar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  background-color: #2d8aa5;
+  color: white;
+  border: none;
+  padding: 11px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 100;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-buscar:hover {
+  background-color: #23738a;
+}
+
+/* Propiedades destacadas */
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.grid-propiedades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.tarjeta-propiedad {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.tarjeta-propiedad:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-propiedad img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info-propiedad {
+  padding: 20px;
+}
+
+.codigo-propiedad {
+  font-size: 0.8rem;
+  color: #2d8aa5;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.caracteristicas {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.boton-ver-mas {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #2d8aa5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.boton-ver-mas:hover {
+  background-color: #23738a;
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: #2d8aa5;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contenedor-pie {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cabecera-con-buscador {
+      min-height: 600px;
+  }
+  
+  .contenido-cabecera {
+      padding: 15px;
+  }
+  
+  .buscador-header {
+      padding: 20px;
+  }
+  
+  .fila-busqueda {
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .grid-propiedades {
+      grid-template-columns: 1fr;
+  }
+
+@media (max-width: 992px) {
+  .fila-busqueda-unica {
+    flex-wrap: wrap;
+  }
+  .grupo-campo {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .grupo-campo {
+    flex: 1 1 100%;
+  }
+}
+}

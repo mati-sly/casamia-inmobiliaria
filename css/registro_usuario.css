@@ -1,0 +1,72 @@
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(65, 105, 161, 0.534)),
+    url('../img/edificios.jpg') center/cover no-repeat;
+    padding: 20px;
+}
+
+#formulario{
+  width: auto;
+  padding: 5px;
+  margin:auto /*centrar automaticamente */
+}
+
+#mostrarusuarios{
+  width: auto;
+  padding: 5px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(10, 66, 112, 0.512);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.card-header {
+  color: white;
+  background-color: rgba(10, 66, 112, 0.512);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  
+  
+}
+
+.table-hover{
+  color: #fff;
+}
+
+
+.table-hover tbody tr:hover {
+  background-color: rgba(14, 62, 103, 0.673); 
+  color: white; /* fuerza el color blanco en el hover */
+}
+
+.form-label {   /*Texto titulo para ver que poner en los input*/
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+.form-control {
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+  border: 1px solid white;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.form-control:focus {
+  background-color: rgba(9, 71, 89, 0.84); 
+  color: #fff;
+}
